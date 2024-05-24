@@ -1,7 +1,7 @@
 import { bst } from "./dependencies.js";
 import Contacto from "./models/Contacto.js";
 
-// Función para agregar un contacto
+
 let btnAdd = document.getElementById("btn-add");
 btnAdd.addEventListener("click", () => {
     let firstName = document.getElementById("firstName").value;
@@ -15,13 +15,12 @@ btnAdd.addEventListener("click", () => {
         alert("El contacto ya existe");
     }
 
-    // Limpiar los campos de entrada
+    
     document.getElementById("firstName").value = "";
     document.getElementById("lastName").value = "";
     document.getElementById("phoneNumber").value = "";
 });
 
-// Función para buscar un contacto
 let btnSearch = document.getElementById("btn-search");
 btnSearch.addEventListener("click", () => {
     let lastName = document.getElementById("searchLastName").value;
@@ -34,6 +33,5 @@ btnSearch.addEventListener("click", () => {
         alert(`No se encontraron contactos con el apellido ${lastName}.`);
     }
 
-    // Limpiar el campo de búsqueda
     document.getElementById("searchLastName").value = "";
 });
