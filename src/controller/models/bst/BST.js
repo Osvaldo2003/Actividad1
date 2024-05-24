@@ -48,7 +48,7 @@ class BST {
         } else if (lastName > node.value.lastName) {
             return this.searchNode(node.right, lastName);
         } else {
-            // Encontrado el nodo
+            // Encuentra el nodo
             return [node.value];
         }
     }
